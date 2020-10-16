@@ -1,4 +1,4 @@
 os: windows
-language: java
+language: generic
 before_install:
   - chmod +x mvnw
