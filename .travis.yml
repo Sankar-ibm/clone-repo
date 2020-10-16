@@ -1,4 +1,4 @@
 os: windows
-language: generic
+language: shell
 before_install:
   - chmod +x mvnw
