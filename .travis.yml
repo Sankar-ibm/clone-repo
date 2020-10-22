@@ -2,6 +2,6 @@ os: windows
 language: shell
 before_install:
   - chmod +x mvnw
-  - if [[ "$TRAVIS_OS_NAME" == "windows" ]]; then Write-Host "Hello, Windows"; fi
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then Write-Host "Hello, Linux"; fi
+  - if [[ "$TRAVIS_OS_NAME" == "windows" ]]; then print "Hello, Windows"; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then print "Hello, Linux"; fi
 
