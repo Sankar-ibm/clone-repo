@@ -1,5 +1,5 @@
 os: windows
 language: shell
-~/bin/install-jdk.sh --target "/home/travis/oraclejdk14" --workspace "/home/travis/.cache/install-jdk" --feature "14" --license "BCL"
 before_install:
   - chmod +x mvnw
+  - ~/bin/install-jdk.sh --target "/home/travis/oraclejdk14" --workspace "/home/travis/.cache/install-jdk" --feature "14" --license "BCL"
