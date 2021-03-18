@@ -8,15 +8,11 @@ addons:
       - oracle-java9-installer
 before_install:
   - chmod +x mvnw
-after_success:
-- mvn clean cobertura:cobertura coveralls:report
 deploy:
   provider: openshift
+  server: https://c100-e.us-east.containers.cloud.ibm.com:31217
   user: csankara@in.ibm.com
-  password:
-    secure:7t4Bxt0nYjOjLNIpp9boNst5evmHvOxpf-T5UXpRKGk
-  app: angular11
-  domain: csankara
-  on:
-    repo: Sankar-ibm/helloworld
+  token: 7t4Bxt0nYjOjLNIpp9boNst5evmHvOxpf-T5UXpRKGk
+  project: springboot2
+  edge: true # opt in to dpl v2
 
