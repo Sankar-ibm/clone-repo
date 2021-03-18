@@ -1,4 +1,6 @@
 language: java
+before_script: 
+  - chmod a+x ./mvnw
 after_success:
 - mvn clean cobertura:cobertura coveralls:report
 deploy:
