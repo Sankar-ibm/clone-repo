@@ -13,6 +13,6 @@ deploy:
   server: https://c100-e.us-east.containers.cloud.ibm.com:31217
   token: 7t4Bxt0nYjOjLNIpp9boNst5evmHvOxpf-T5UXpRKGk
   project: csankara-in
-  app: springboot2
+  app: springboot
   edge: true # opt in to dpl v2
 
