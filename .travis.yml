@@ -11,7 +11,6 @@ before_install:
 deploy:
   provider: openshift
   server: https://c100-e.us-east.containers.cloud.ibm.com:31217
-  user: csankara@in.ibm.com
   token: 7t4Bxt0nYjOjLNIpp9boNst5evmHvOxpf-T5UXpRKGk
   project: springboot2
   edge: true # opt in to dpl v2
